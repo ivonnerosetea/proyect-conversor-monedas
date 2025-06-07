@@ -45,7 +45,7 @@ Ejemplo de salida:
 - **Java 17**
 - **Gson** – Para parsear JSON
 - **exchangerate.host** – API pública de tipo de cambio
-- **VSCode / IntelliJ IDEA** – Para el desarrollo
+- **IntelliJ IDEA** – Para el desarrollo
 - **Terminal Bash / Zsh** – Para ejecutar el programa
 
 ---
@@ -57,6 +57,8 @@ Puedes clonar este repositorio con:
 ```bash
 git clone https://github.com/tuusuario/conversor-monedas-java.git
 cd conversor-monedas-java
+
+---
 
 ## Créditos
 Este proyecto utiliza la API gratuita de exchangerate.host para obtener tasas de cambio en tiempo real. Gracias a su equipo por proveer un servicio abierto y confiable para desarrolladores.
