@@ -54,7 +54,6 @@ Ejemplo de salida:
 
 Puedes clonar este repositorio con:
 
-```bash
 git clone https://github.com/tuusuario/conversor-monedas-java.git
 cd conversor-monedas-java
 
