@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("\u001B[33m\u001B[1m\u001B[4m\u001B[3m\u001B[36m¡Bienvenido/a al conversor de monedas!\u001B[0m\n");
+        System.out.println("\u001B[33m\u001B[1m\u001B[3m\u001B[36m¡Bienvenido/a al conversor de monedas!\u001B[0m");
+        System.out.println("\u001B[32m\u001B[1m\u001B[4m\u001B[3m\u001B[36m\t\t\t\t\t\t\t\t\t\t\u001B[0m\n");
 
         Scanner entrada = new Scanner(System.in);
         ConsultaMoneda consulta = new ConsultaMoneda();
@@ -23,20 +24,22 @@ public class Principal {
                 5) Dólar ==> Peso colombiano
                 6) Peso colombiano ==> Dólar
                 7) Salir
-
-                Elija una opción válida:
                 """;
 
                 System.out.println(menu);
 
+                System.out.println("Elija una opción válida:");
                 opcion = Integer.parseInt(entrada.nextLine());
                 if (opcion == 7) {
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("\u001B[32m\u001B[1m\u001B[4m\u001B[3m\u001B[36m\t\t\t\t\t\t\t\t\t\t\u001B[0m");
+                    System.out.println("\u001B[33m\u001B[1m\u001B[3m\u001B[36mSaliendo del programa...\u001B[0m");
                     break;
                 }
 
                 System.out.print("Ingrese el monto a convertir: ");
                 monto = Double.parseDouble(entrada.nextLine());
+
+                System.out.println("\u001B[32m\u001B[1m\u001B[4m\u001B[3m\u001B[36m\t\t\t\t\t\t\t\t\t\t\u001B[0m");
 
                 switch (opcion) {
                     case 1 -> { origen = "USD"; destino = "ARS"; }
@@ -46,8 +49,10 @@ public class Principal {
                     case 5 -> { origen = "USD"; destino = "COP"; }
                     case 6 -> { origen = "COP"; destino = "USD"; }
                     default -> {
-                        System.out.println("Opción no válida");
+                        System.out.println("\nOpción no válida");
+                        System.out.println("\u001B[32m\u001B[1m\u001B[4m\u001B[3m\u001B[36m\t\t\t\t\t\t\t\t\t\t\u001B[0m");
                         continue;
+
                     }
                 }
 
