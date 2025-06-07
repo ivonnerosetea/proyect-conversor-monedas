@@ -46,7 +46,7 @@ Ejemplo de salida:
 - **Gson** – Para parsear JSON
 - **exchangerate.host** – API pública de tipo de cambio
 - **IntelliJ IDEA** – Para el desarrollo
-- **Terminal Bash / Zsh** – Para ejecutar el programa
+- **Terminal Bash** – Para ejecutar el programa
 
 ---
 
